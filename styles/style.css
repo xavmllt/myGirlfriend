@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav .container .line {
+    width: 100px;
+    height: 0;
+    border: 1px solid #a545c7;
+}
+header nav .container .logo img {
+    width: 160px;
+    height: 150px;
+}
+
+main {
+    margin-top: 100px;
+}
+main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+main form label {
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+main form input[type="text"] {
+    border: none;
+    border-bottom: 1px solid grey;
+    font-size: 20px;
+    width: 180px;
+}
+main form input[type="submit"] {
+    background-color: #fff;
+    border: none;
+    font-size: 30px;
+    margin-top: 10px;
+    padding-left: 5px;
+}
+main form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+footer {
+    font-family: "Dancing Script", cursive;
+    bottom: 0;
+    position: absolute;
+    padding: 15px;
+    font-size: 50px;
+}
