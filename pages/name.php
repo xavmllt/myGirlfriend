@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Galada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="../styles/page2.css">
+    <link rel="stylesheet" href="../styles/name.css">
     <title>myGirlfriend</title>
 </head>
 <body>
@@ -21,10 +21,11 @@
 
         <p>Don't panic, you just have to answer a few questions !</p>
 
-        <button><a href="pages/page3.php"></a>Ready</button>
+       <a href="../pages/nickName.php?nom=<?= urldecode($_GET['nom']); ?>"><button>Ready</button></a>
 
     </main>
 
     <?php include("../components/footer.php"); ?>
+
 </body>
 </html>

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header nav .container .line {
+    width: 100px;
+    height: 0;
+    border: 1px solid #a545c7;
+}
+header nav .container .logo img {
+    width: 160px;
+    height: 150px;
+}
+
+main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+main h1 {
+    font-family: "Galada", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #9F1818;
+}
+main p {
+    font-family: "GFS Neohellenic", sans-serif;
+    text-align: center;
+    width: 370px;
+    margin: 20px auto;
+    font-size: 30px;
+}
+main button {
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: "Lobster Two", sans-serif;
+    font-size: 25px;
+}
+main button:hover {
+    cursor: pointer;
+}
+
+footer {
+    font-family: "Dancing Script", cursive;
+    bottom: 0;
+    position: absolute;
+    padding: 15px;
+    font-size: 50px;
+}

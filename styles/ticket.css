@@ -21,38 +21,34 @@ header nav .container .logo img {
 main {
     margin-top: 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
-main h1 {
+main p {
     font-family: "Galada", cursive;
     font-weight: 400;
     font-style: normal;
-    font-size: 50px;
+    font-size: 30px;
+    width: 400px;
+    text-align: center;
     color: #9F1818;
 }
-main p {
-    font-family: "GFS Neohellenic", sans-serif;
-    text-align: center;
-    width: 370px;
-    margin: 20px auto;
-    font-size: 30px;
+main p span {
+    color: violet;
 }
-main button {
-    width: 150px;
-    height: 40px;
-    background-color: #000;
-    border: none;
-    border-radius: 10px;
-    color: #fff;
-    font-family: "Lobster Two", sans-serif;
-    font-size: 25px;
+main .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 50px;
 }
-main button:hover {
-    cursor: pointer;
+main .container .ticket img {
+    width: 100px;
+    height: 100px;
+    padding: 0 60px;
 }
+
 footer {
     font-family: "Dancing Script", cursive;
     bottom: 0;

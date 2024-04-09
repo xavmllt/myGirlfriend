@@ -5,5 +5,5 @@ submit.addEventListener('click', (event) => {
     event.preventDefault();
     nom = nom.value;
     console.log(nom);
-    window.location = './pages/page2.php?nom=' + encodeURIComponent(nom);
+    window.location = './pages/name.php?nom=' + encodeURIComponent(nom);
 });
