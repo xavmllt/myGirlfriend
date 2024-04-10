@@ -20,10 +20,10 @@
         <p>okey, <span><?= $nom = $_GET['nom']; ?></span>, please choice our first mystery date *_* </p>
 
         <div class="container">
-            <div class="ticket"><img src="../assets/ticket.png" alt="Ticket"></div>
-            <div class="ticket"><img src="../assets/ticket.png" alt="Ticket"></div>
-            <div class="ticket"><img src="../assets/ticket.png" alt="Ticket"></div>
-            <div class="ticket"><img src="../assets/ticket.png" alt="Ticket"></div>
+            <div class="ticket"><a href="../pages/ticketNetflixAndChill.php"><img src="../assets/ticket.png" alt="Ticket"></a></div>
+            <div class="ticket"><a href="../pages/ticketDisney.php"><img src="../assets/ticket.png" alt="Ticket"></a></div>
+            <div class="ticket"><a href="../pages/ticketStars.php"><img src="../assets/ticket.png" alt="Ticket"></a></div>
+            <div class="ticket"><a href="../pages/ticketLondon.php"><img src="../assets/ticket.png" alt="Ticket"></a></div>
         </div>
 
     </main>

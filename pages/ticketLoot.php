@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['nom'] = $_GET['nom'];
+$nom = $_SESSION['nom'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,11 +22,9 @@ $_SESSION['nom'] = $_GET['nom'];
 
     <main>
 
-        <h1>Hey <?= $nom = $_GET['nom'] ?> 😊</h1>
+        <p>omg, <?= $nom; ?> ! You have such an incredible insctinct ! I’m so excited, dont you ? 😊</p>
 
-        <p>Don't panic, you just have to answer a few questions !</p>
-
-        <a href="../pages/nickName.php?nom=<?= urldecode($_GET['nom']); ?>"><button>Ready</button></a>
+        <a href="../pages/shy.php"><button>YES</button></a>
 
     </main>
 

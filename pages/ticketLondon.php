@@ -1,7 +1,3 @@
-<?php
-session_start();
-$_SESSION['nom'] = $_GET['nom'];
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +9,7 @@ $_SESSION['nom'] = $_GET['nom'];
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Galada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="../styles/name.css">
+    <link rel="stylesheet" href="../styles/ticketSurprise.css">
     <title>myGirlfriend</title>
 </head>
 <body>
@@ -22,11 +18,17 @@ $_SESSION['nom'] = $_GET['nom'];
 
     <main>
 
-        <h1>Hey <?= $nom = $_GET['nom'] ?> 😊</h1>
-
-        <p>Don't panic, you just have to answer a few questions !</p>
-
-        <a href="../pages/nickName.php?nom=<?= urldecode($_GET['nom']); ?>"><button>Ready</button></a>
+    <div class="choice__cards">
+        <div class="card1">
+            <div class="card1__front">
+                <p>?</p>
+            </div>
+            <div class="card1__back">
+                <img src="../assets/london.jpeg" alt="Netflix">
+            </div>
+        </div>
+        <a href="../pages/ticketLoot.php"><button>TROP BIENN !</button></a>
+    </div>
 
     </main>
 

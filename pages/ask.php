@@ -1,6 +1,6 @@
 <?php
 session_start();
-$_SESSION['nom'] = $_GET['nom'];
+$nom = $_SESSION['nom'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +13,8 @@ $_SESSION['nom'] = $_GET['nom'];
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Galada&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="assets/logo.png">
-    <link rel="stylesheet" href="../styles/name.css">
+    <link rel="stylesheet" href="../styles/shyOff.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>myGirlfriend</title>
 </head>
 <body>
@@ -22,11 +23,21 @@ $_SESSION['nom'] = $_GET['nom'];
 
     <main>
 
-        <h1>Hey <?= $nom = $_GET['nom'] ?> 😊</h1>
+        <p><?= $nom; ?>, wanna be myGirlfriend ? </p>
 
-        <p>Don't panic, you just have to answer a few questions !</p>
+        <a href="../pages/officialy.php"><button>YES</button></a>
+        <button id="buttonNo">NO</button>
 
-        <a href="../pages/nickName.php?nom=<?= urldecode($_GET['nom']); ?>"><button>Ready</button></a>
+        <script>
+            $(document).ready(function() {
+                $('#buttonNo').on('mouseover', function() {
+                    $(this).animate({
+                        'top': Math.random() * window.innerHeight + "px",
+                        'left': Math.random() * window.innerWidth + "px"
+                    }, "medium");
+                });
+            });
+        </script>
 
     </main>
 
