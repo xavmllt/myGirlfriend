@@ -27,6 +27,7 @@ main form {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    flex-wrap: wrap;
 }
 main form label {
     font-family: "Galada", cursive;
@@ -34,6 +35,7 @@ main form label {
     font-style: normal;
     font-size: 30px;
     width: 400px;
+    text-align: center;
 }
 main form label span {
     color: #9F1818;
