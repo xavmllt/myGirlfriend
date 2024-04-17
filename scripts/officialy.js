@@ -1,6 +1,6 @@
 const button = document.getElementById("button");
 let messageArea = document.getElementById("message");
-let message = "L'amour ne voit pas avec les yeux, mais avec l'âme. - William Shakespeare";
+let message = "To be your friend was all I ever wanted; to be your lover was all I ever dreamed";
 messageArea.style.color = "red";
 
 button.addEventListener("click", () => {

@@ -27,7 +27,7 @@
                 <img src="../assets/stars.jpeg" alt="Stars">
             </div>
         </div>
-        <a href="../pages/ticketLoot.php"><button>TROP BIENN !</button></a>
+        <a href="../pages/ticketLoot.php"><button>AMAZING ! <3</button></a>
     </div>
 
     </main>
