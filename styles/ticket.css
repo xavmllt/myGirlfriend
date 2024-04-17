@@ -60,5 +60,13 @@ footer {
 @media screen and (max-width: 768px) { 
     main .container {
         grid-template-columns: repeat(1, 1fr);
+        width: fit-content;
+    }
+    main p {
+        padding: 10px;
+        margin-left: 10px;
+    }
+    footer {
+        position: static;
     }
 }
